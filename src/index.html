@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!--<script src="index.js"></script>-->
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./img/vecteezy_perfume-silhouette-black-and-white-icon-design-element-on_7487627.svg" width="100px" height="100px" title="Logo">
+        <form action="/search" method="GET" class="search-form" role="search">
+            <div class="search-input-wrapper">
+                <input type="search" name="q" id="perfume-search" placeholder="Tom Ford Tobaco Vanille..." autocomplete="off" aria-label="Search of a parfum">
+                <button class="search-btn" type="submit" aria-label="Make reseach">Search</button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <div class="search-filters">
+            <div class="filter-group">
+                <label for="brand">Brand</label>
+                <select name="brand" id="brand">
+                    <option value="">All brands</option>
+                    <option value="tomford">Tom Ford</option>
+                    <option value="Bvlgari">Bvlgari</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="gender">For</label>
+                <select name="gender">
+                    <option value="">All</option>
+                    <option value="women">Women</option>
+                    <option value="men">Men</option>
+                    <option value="unisex">Unisex</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price">Price to</label>
+                <select name="price" id="price">
+                    <option value="">Other</option>
+                    <option value="3000">3 000₽</option>
+                    <option value="5000">5 000₽</option>
+                    <option value="10000">10 000₽</option>
+                    <option value="20000">20 000₽</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="notes">Notes</label>
+                <select name="notes" id="notes">
+                    <option value="">All notes</option>
+                    <option value="floral">floral</option>
+                    <option value="citrus">citrus</option>
+                    <option value="woody">woody</option>
+                    <option value="oriental">oriental</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="modale-card" id="modale-card">
+            <button id="closeModal">Закрыть</button>
+            <div class="modal-content">
+                <div class="parfume">
+                    <img src="./img/black orchid.jpeg" style="width: 150px; height: 150px; margin: 0 auto" alt="black-orchid">
+                    <div class="text">
+                        <h3 class="perfume-author"><b>Tom Ford</b></h3>
+                        <h4 class="perfume-name"><i>Black Orchid</i></h4>
+                        <div class="perfume-price">1 200 ₽</div>
+                 </div>
+                </div>
+                    <p class="description-perfume">The base of the fragrance is the elusive notes of a black orchid, called by TOM FORD "the perfect flower — luxurious, elegant, pure and refined."
+                    Packaging: the charcoal—black bottle features elegant lines and a sophisticated Art Deco design. An excellently crafted BLACK ORCHID glass bottle with a fluted surface, handmade braid, a gold plate with a name and an engraving are all an integral part of TOM FORD-style luxury.</p>
+                    
+                 
+            </div>
+                
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="./img/bitter peach.jpeg.jpeg" style="width: 90px; height: 165px; margin: 0 auto" alt="bitter-peach">
+                <div class="text">
+                    <h3 class="perfume-name"><b>Tom Ford</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Bitter Peach</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/black orchid.jpeg" style="width: 150px; height: 150px; margin: 0 auto" alt="black-orchid">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Tom Ford</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Black Orchid</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            
+            <div class="card">
+                <img src="./img/soleil blanc.jpeg" style="width: 150px; height: 150px; margin: 0 auto" alt="soleil-blanc">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Tom Ford</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Soleil Blanc</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/lost chery.jpeg" style="width: 170px; height: 170px; margin: 0 auto" alt="lost-chery">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Tom Ford</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Lost Chery</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/oud wood.jpeg" style="width: 150px; height: 150px; margin: 0 auto" alt="oud-wood">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Tom Ford</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Oud Wood</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/ombre leather.jpeg" style="width: 140px; height: 140px; margin: 0 auto" alt="ombre-leather">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Tom Ford</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Ombre Leather</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/Без названия.jpeg" style="width: 150px; height: 150px; margin: 0 auto" alt="tobaco-vanille">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Tom Ford</b> </h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Tobaco Vanille</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/lavender extreme.jpeg" style="width: 90px; height: 140px; margin: 0 auto" alt="lavender-extreme">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Tom Ford</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Lavender Extreme</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/bv aqva.jpeg" style="width: 140px; height: 160px; margin: 0 auto" alt="aqva">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Bvlgari</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Aqva</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/bv man in black.jpeg" style="width: 130px; height: 140px; margin: 0 auto" alt="man-in-black">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Bvlgari</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Man in Black</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/bv tygar.jpeg" style="width: 150px; height: 150px; margin: 0 auto" alt="tygar">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Bvlgari</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Tyger</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/bv white tea.jpeg" style="width: 150px; height: 150px; margin: 0 auto" alt="white-tea">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Bvlgari</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>White Tea</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/bv wood essence.jpeg" style="width: 150px; height: 140px; margin: 0 auto" alt="wood-essence">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Bvlgari</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Wood Essence</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/bv wood neroli.jpeg" style="width: 150px; height: 140px; margin: 0 auto" alt="wood-neroli">
+                <div class="text">
+                    <h3 class="perfume-author"><b>Bvlgari</b></h3>
+                    
+                    <!--<p class="description-perfume">Description</p> -->
+                    <div class="perfume-price">1 200 ₽</div>
+                </div>
+                <h4 class="perfume-name"><i>Wood Neroli</i></h4>
+                <button class="add-to-cart" id="toCart">Add to cart</button>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
